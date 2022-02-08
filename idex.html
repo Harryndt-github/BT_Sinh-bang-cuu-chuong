@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Cửu Chương</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            font-size: medium;
+            font-family: sans-serif;
+        }
+    </style>
+<body>
+    <h1>Bảng Cửu Chương</h1>
+    <script>
+        let Bcc = `<table border="1" cellpadding="5" cellspacing="0">`;
+        let a = 1;
+        let b = 2;
+        while (a <= 9) {
+            Bcc += `<tr>`;
+            while (b <= 9) {
+                Bcc += `<td>${a}x${b}=${a * b}</td>`;
+                b++;
+            }
+            Bcc += `</tr>`;
+            a++;
+            b = 2;
+        }
+        Bcc += `</table>`;
+        document.write(Bcc);
+    </script>
+</body>
+    </head>
+</html>
